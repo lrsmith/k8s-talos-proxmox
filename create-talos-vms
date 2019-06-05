@@ -11,7 +11,7 @@ qm create 201                                         \
 --net0 e1000=52:05:42:00:02:01,bridge=vmbr0,firewall=1  \
 --scsihw virtio-scsi-pci                                \
 --memory 1024                                           \
---onboot no
+--onboot yes
 
 # talos-mstr-02
 pvesm alloc local-lvm 202 '' 25G
@@ -26,7 +26,7 @@ qm create 202                                         \
 --net0 e1000=52:05:42:00:02:02,bridge=vmbr0,firewall=1  \
 --scsihw virtio-scsi-pci                                \
 --memory 1024                                           \
---onboot no
+--onboot yes
 
 # talos-mstr-03
 pvesm alloc local-lvm 203 '' 25G
@@ -41,7 +41,7 @@ qm create 203                                         \
 --net0 e1000=52:05:42:00:02:03,bridge=vmbr0,firewall=1  \
 --scsihw virtio-scsi-pci                                \
 --memory 1024                                           \
---onboot no
+--onboot yes
 
 # talos-wrkr-01
 pvesm alloc local-lvm 211 '' 100G
@@ -56,4 +56,4 @@ qm create 211                                         \
 --net0 e1000=52:05:42:00:02:11,bridge=vmbr0,firewall=1  \
 --scsihw virtio-scsi-pci                                \
 --memory 16192                                        \
---onboot no
+--onboot yes
