@@ -3,7 +3,7 @@ pvesm alloc local-lvm 201 '' 25G
 
 qm create 201                                         \
 --name talos-mstr-01                                    \
---cdrom local:iso/talos-v0.1.0-alpha.27.iso             \
+--cdrom local:iso/talos.iso             \
 --ostype other                                          \
 --ide0 local-lvm:vm-201-disk-0,size=25G                 \
 --sockets 1                                             \
@@ -18,7 +18,7 @@ pvesm alloc local-lvm 202 '' 25G
 
 qm create 202                                         \
 --name talos-mstr-02                                    \
---cdrom local:iso/talos-v0.1.0-alpha.27.iso             \
+--cdrom local:iso/talos.iso             \
 --ostype other                                          \
 --ide0 local-lvm:vm-202-disk-0,size=25G                 \
 --sockets 1                                             \
@@ -33,7 +33,7 @@ pvesm alloc local-lvm 203 '' 25G
 
 qm create 203                                         \
 --name talos-mstr-03                                    \
---cdrom local:iso/talos-v0.1.0-alpha.27.iso             \
+--cdrom local:iso/talos.iso             \
 --ostype other                                          \
 --ide0 local-lvm:vm-203-disk-0,size=25G                 \
 --sockets 1                                             \
@@ -48,7 +48,7 @@ pvesm alloc local-lvm 211 '' 100G
 
 qm create 211                                         \
 --name talos-wrkr-01                                    \
---cdrom local:iso/talos-v0.1.0-alpha.27.iso             \
+--cdrom local:iso/talos.iso             \
 --ostype other                                          \
 --ide0 local-lvm:vm-211-disk-0,size=100G                 \
 --sockets 1                                             \
